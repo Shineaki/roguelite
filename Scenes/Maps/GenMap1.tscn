@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfg6acvyfpipc"]
+
+[ext_resource type="Script" uid="uid://c3rbh4sm133r8" path="res://Scripts/Map/MapGen1.gd" id="1_f0cro"]
+[ext_resource type="TileSet" uid="uid://cam8xrfkupcww" path="res://Resources/Tilesets/Walls.tres" id="2_f0cro"]
+[ext_resource type="TileSet" uid="uid://hvu5x3i3fs3f" path="res://Resources/Tilesets/Floor.tres" id="3_wquu1"]
+
+[node name="GenMap1" type="Node2D"]
+script = ExtResource("1_f0cro")
+
+[node name="Walls" type="TileMapLayer" parent="."]
+position = Vector2(8, 0)
+tile_set = ExtResource("2_f0cro")
+
+[node name="Floor" type="TileMapLayer" parent="."]
+z_index = -1
+tile_set = ExtResource("3_wquu1")

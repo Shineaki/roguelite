@@ -15,6 +15,11 @@ run/main_scene="uid://brdrpfh78g2ef"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+
 [input]
 
 ui_left={
@@ -55,3 +60,4 @@ ui_down={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.133333, 0.133333, 0.133333, 1)
