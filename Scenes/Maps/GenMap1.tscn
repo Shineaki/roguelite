@@ -8,9 +8,10 @@
 script = ExtResource("1_f0cro")
 
 [node name="Walls" type="TileMapLayer" parent="."]
+z_index = -1
 position = Vector2(8, 0)
 tile_set = ExtResource("2_f0cro")
 
 [node name="Floor" type="TileMapLayer" parent="."]
-z_index = -1
+z_index = -2
 tile_set = ExtResource("3_wquu1")
