@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bs6po5d12seqf"]
+[gd_scene load_steps=14 format=3 uid="uid://bs6po5d12seqf"]
 
 [ext_resource type="Texture2D" uid="uid://hu1rl6ihann7" path="res://Resources/Characters/Elf/elf_m_idle_anim_f0.png" id="1_7pt4t"]
 [ext_resource type="Script" uid="uid://b7en2jsa0p0qo" path="res://Scripts/Player.gd" id="1_7qdam"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c7iu06ndklglf" path="res://Resources/Characters/Elf/elf_m_run_anim_f1.png" id="8_shd1k"]
 [ext_resource type="Texture2D" uid="uid://bh54dvcns5frd" path="res://Resources/Characters/Elf/elf_m_run_anim_f2.png" id="9_5kd0c"]
 [ext_resource type="Texture2D" uid="uid://cdax5kuf0dtvw" path="res://Resources/Characters/Elf/elf_m_run_anim_f3.png" id="10_aal88"]
+[ext_resource type="Texture2D" uid="uid://cr3u4i10jbjkc" path="res://Resources/light.png" id="11_b4kmf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w38he"]
 animations = [{
@@ -72,3 +73,18 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -3)
 shape = SubResource("CapsuleShape2D_meglp")
+
+[node name="Light" type="PointLight2D" parent="."]
+color = Color(0.979818, 0.747012, 0.733838, 1)
+energy = 0.6
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 10.2
+texture = ExtResource("11_b4kmf")
+
+[node name="NonShadowLight" type="PointLight2D" parent="."]
+color = Color(0.994536, 0.936839, 0.93279, 1)
+energy = 0.1
+shadow_filter = 1
+shadow_filter_smooth = 5.0
+texture = ExtResource("11_b4kmf")

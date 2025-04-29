@@ -3,6 +3,14 @@ extends Node
 var floor: TileMapLayer = null
 var walls: TileMapLayer = null
 
+func path_finding() -> void:
+	var astar_grid = AStarGrid2D.new()
+	astar_grid.region = Rect2i(0, 0, 32, 32)
+	astar_grid.cell_size = Vector2(16, 16)
+	astar_grid.update()
+	print(astar_grid.get_id_path(Vector2i(0, 0), Vector2i(3, 4)))
+
+
 func _ready() -> void:
 	floor = get_node("Floor")
 	walls = get_node("Walls")
