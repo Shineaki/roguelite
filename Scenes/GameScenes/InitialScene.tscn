@@ -9,6 +9,6 @@
 position = Vector2(8, 8)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 
 [node name="BaseMap" parent="." instance=ExtResource("2_y28a4")]
